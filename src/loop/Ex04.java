@@ -1,15 +1,15 @@
-package loop.quiz;
+package loop;
 
-public class Quiz01 {
+public class Ex04 {
 
 	public static void main(String[] args) {
 		
 		int num = 11;
 		
-		while(num<=20) {
+		do {
 			System.out.println(num);
 			num++;
-		}
+		}while(num <= 10);
 		
 	}
 
