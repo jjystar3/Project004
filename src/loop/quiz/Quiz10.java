@@ -11,11 +11,13 @@ public class Quiz10 {
 //			System.out.println();
 //		}
 
-		for (int i = 1; i <= 5; i++) {
-			for (int k = 1; k <= 5 - i; k++) {
+		int length = 5;
+
+		for (int i = 1; i <= length; i++) {
+			for (int k = 1; k <= Math.abs(Math.round((float) length / 2) - i); k++) {
 				System.out.print(" ");
 			}
-			for (int j = 1; j <= i * 2 - 1; j++) {
+			for (int j = 1; j <= length - (Math.abs(Math.round((float) length / 2) - i) * 2); j++) {
 				System.out.print("*");
 			}
 			System.out.println();
